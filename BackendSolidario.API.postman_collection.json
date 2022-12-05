@@ -1,0 +1,1976 @@
+{
+	"info": {
+		"_postman_id": "82c70759-0c2e-4be9-8adc-10a743334597",
+		"name": "BackendSolidario.API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14529039"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Cliente",
+					"item": [
+						{
+							"name": "/api/Cliente",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Cliente",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cliente"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Cliente",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"identificacion\": \"0802502949\",\n  \"nombre\": \"Alan Brito Delgado\",\n  \"usuario\": \"abrito\",\n  \"contrasena\": \"abrito\",\n  \"estado\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Cliente",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cliente"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/api/Cliente",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"clienteId\": \"jlema\",\n  \"contrasena\": \"1234\",\n  \"personaId\": 4\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:08:50 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 3,\n        \"clienteId\": \"mmontalvo\",\n        \"contrasena\": \"YigaOgRiSwzs7B5Ebk2MqHprzgJtGpvFALQJy0zj7mQ=\",\n        \"personaId\": 5\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								},
+								{
+									"name": "/api/Cliente",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"clienteId\": \"mmontalvo\",\n  \"contrasena\": \"5678\",\n  \"personaId\": 5\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:08:50 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 3,\n        \"clienteId\": \"mmontalvo\",\n        \"contrasena\": \"YigaOgRiSwzs7B5Ebk2MqHprzgJtGpvFALQJy0zj7mQ=\",\n        \"personaId\": 5\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								},
+								{
+									"name": "/api/Cliente",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"clienteId\": \"josorio\",\n  \"contrasena\": \"1245 \",\n  \"personaId\": 6\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:10:11 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 4,\n        \"clienteId\": \"josorio\",\n        \"contrasena\": \"ryxQwUSub/oPjhQHYoxPQt3nOZGkaeyObDAdkqYe0JI=\",\n        \"personaId\": 6\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Cliente",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 59030362,\n  \"clienteId\": \"dolore minim\",\n  \"contrasena\": \"deserunt q\",\n  \"personaId\": -86916284\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Cliente",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cliente"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": 59030362,\n  \"clienteId\": \"dolore minim\",\n  \"contrasena\": \"deserunt q\",\n  \"personaId\": -86916284\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Get Cliente By Id Async",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Cliente/ById/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cliente",
+										"ById",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente/ById/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente",
+												"ById",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "87304570",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Get Cliente By Username",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Cliente/ByUsername/:username",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cliente",
+										"ByUsername",
+										":username"
+									],
+									"variable": [
+										{
+											"key": "username",
+											"value": "abrito",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente/ByUsername/:username",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente",
+												"ByUsername",
+												":username"
+											],
+											"variable": [
+												{
+													"key": "username",
+													"value": "quis laborum qui es",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Cliente/:id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Cliente/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cliente",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "87304570",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "87304570",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Cuenta",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/Cuenta/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "87304570",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Cuenta/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Cuenta",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "87304570",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Cuenta",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Cuenta",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cuenta"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Cuenta",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"numeroCuenta\": \"000003\",\n    \"saldoInicial\": 150.00,\n    \"estado\": true,\n    \"clienteId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Cuenta",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cuenta"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/api/Cuenta",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"numeroCuenta\": \"478758\",\n    \"tipoCuenta\": \"Ahorro\",\n    \"saldoInicial\": 2000.00,\n    \"estado\": true,\n    \"clienteId\": 2\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:18:23 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 0,\n        \"numeroCuenta\": \"478758\",\n        \"tipoCuenta\": \"Ahorro\",\n        \"saldoInicial\": 2000,\n        \"estado\": true,\n        \"clienteId\": 2\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								},
+								{
+									"name": "---",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"numeroCuenta\": \"225487\",\n    \"tipoCuenta\": \"Corriente\",\n    \"saldoInicial\": 100.00,\n    \"estado\": true,\n    \"clienteId\": 3\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:19:26 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 0,\n        \"numeroCuenta\": \"225487\",\n        \"tipoCuenta\": \"Corriente\",\n        \"saldoInicial\": 100,\n        \"estado\": true,\n        \"clienteId\": 3\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								},
+								{
+									"name": "/api/Cuenta",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"numeroCuenta\": \"225487\",\n    \"tipoCuenta\": \"Corriente\",\n    \"saldoInicial\": 100.00,\n    \"estado\": true,\n    \"clienteId\": 3\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:19:26 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 0,\n        \"numeroCuenta\": \"225487\",\n        \"tipoCuenta\": \"Corriente\",\n        \"saldoInicial\": 100,\n        \"estado\": true,\n        \"clienteId\": 3\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								},
+								{
+									"name": "/api/Cuenta",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"numeroCuenta\": \"495878\",\n    \"tipoCuenta\": \"Ahorros\",\n    \"saldoInicial\": 0.00,\n    \"estado\": true,\n    \"clienteId\": 4\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:23:19 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 0,\n        \"numeroCuenta\": \"495878\",\n        \"tipoCuenta\": \"Ahorros\",\n        \"saldoInicial\": 0,\n        \"estado\": true,\n        \"clienteId\": 4\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								},
+								{
+									"name": "/api/Cuenta",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"numeroCuenta\": \"496825\",\n    \"tipoCuenta\": \"Ahorros\",\n    \"saldoInicial\": 540.00,\n    \"estado\": true,\n    \"clienteId\": 3\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:23:59 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 0,\n        \"numeroCuenta\": \"496825\",\n        \"tipoCuenta\": \"Ahorros\",\n        \"saldoInicial\": 540,\n        \"estado\": true,\n        \"clienteId\": 3\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								},
+								{
+									"name": "/api/Cuenta",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"numeroCuenta\": \"585545\",\n    \"tipoCuenta\": \"Corriente\",\n    \"saldoInicial\": 1000.00,\n    \"estado\": true,\n    \"clienteId\": 2\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:28:12 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 0,\n        \"numeroCuenta\": \"585545\",\n        \"tipoCuenta\": \"Corriente\",\n        \"saldoInicial\": 1000,\n        \"estado\": true,\n        \"clienteId\": 2\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Cuenta",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"numeroCuenta\": \"000001\",\n    \"tipoCuenta\": \"Ahorros\",\n    \"saldoInicial\": 1000,\n    \"estado\": true,\n    \"clienteId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Cuenta",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cuenta"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": 59337174,\n  \"numeroCuenta\": \"incididunt cupidatat\",\n  \"tipoCuenta\": \"et cillum\",\n  \"saldoInicial\": 13776358.036497787,\n  \"estado\": false,\n  \"personaId\": 12850857\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Get Cuentas By Client Id Async",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Cuenta/ByClientId/:idCliente",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cuenta",
+										"ByClientId",
+										":idCliente"
+									],
+									"variable": [
+										{
+											"key": "idCliente",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta/ByClientId/:idCliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta",
+												"ByClientId",
+												":idCliente"
+											],
+											"variable": [
+												{
+													"key": "idCliente",
+													"value": "87304570",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Get Cuenta By Numero Cuenta Async",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Cuenta/ByNumeroCuenta/:numeroCuenta",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cuenta",
+										"ByNumeroCuenta",
+										":numeroCuenta"
+									],
+									"variable": [
+										{
+											"key": "numeroCuenta",
+											"value": "000001",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta/ByNumeroCuenta/:numeroCuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta",
+												"ByNumeroCuenta",
+												":numeroCuenta"
+											],
+											"variable": [
+												{
+													"key": "numeroCuenta",
+													"value": "quis laborum qui es",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Movimiento",
+					"item": [
+						{
+							"name": "/api/Movimiento",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimiento",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimiento"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimiento",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimiento"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Movimiento",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fecha\": \"2022-02-08T15:30:10.413Z\",\n    \"tipoMovimiento\": \"Deposto\",\n    \"valor\": 10.00,\n    \"cuentaId\": \"000001\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimiento",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimiento"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/api/Movimiento",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"fecha\": \"2022-08-28T06:53:51.217Z\",\n    \"tipoMovimiento\": \"Debito\",\n    \"valor\": 575.00,\n    \"cuentaId\": \"478758\"\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimiento",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimiento"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:32:24 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"fecha\": \"2022-08-28T06:53:51.217Z\",\n        \"tipoMovimiento\": \"Debito\",\n        \"valor\": -575,\n        \"saldo\": 1425,\n        \"cuentaId\": \"478758\"\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								},
+								{
+									"name": "/api/Movimiento",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"fecha\": \"2022-08-10T15:30:10.413Z\",\n    \"tipoMovimiento\": \"Deposito\",\n    \"valor\": 600.00,\n    \"cuentaId\": \"225487\"\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimiento",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimiento"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:33:50 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 2,\n        \"fecha\": \"2022-08-10T15:30:10.413Z\",\n        \"tipoMovimiento\": \"Deposito\",\n        \"valor\": 600,\n        \"saldo\": 700,\n        \"cuentaId\": \"225487\"\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								},
+								{
+									"name": "/api/Movimiento",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"fecha\": \"2022-08-14T15:30:10.413Z\",\n    \"tipoMovimiento\": \"Deposito\",\n    \"valor\": 150.00,\n    \"cuentaId\": \"495878\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimiento",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimiento"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:35:00 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 3,\n        \"fecha\": \"2022-08-14T15:30:10.413Z\",\n        \"tipoMovimiento\": \"Deposito\",\n        \"valor\": 150,\n        \"saldo\": 150,\n        \"cuentaId\": \"495878\"\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								},
+								{
+									"name": "/api/Movimiento",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"fecha\": \"2022-02-08T15:30:10.413Z\",\n    \"tipoMovimiento\": \"Debito\",\n    \"valor\": 540.00,\n    \"cuentaId\": \"496825\"\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimiento",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimiento"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:36:28 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 4,\n        \"fecha\": \"2022-02-08T15:30:10.413Z\",\n        \"tipoMovimiento\": \"Debito\",\n        \"valor\": -540,\n        \"saldo\": 0,\n        \"cuentaId\": \"496825\"\n    },\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Movimiento",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 2,\n    \"fecha\": \"2022-02-10T15:30:10.413\",\n    \"tipoMovimiento\": \"Deposito\",\n    \"valor\": 600,\n    \"saldo\": 700,\n    \"cuentaId\": \"225487\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimiento",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimiento"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -86407264,\n  \"fecha\": \"1980-05-10T06:53:51.217Z\",\n  \"tipoMovimiento\": \"amet ut commodo eiusmod\",\n  \"valor\": -76372510.69568816\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimiento",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimiento"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Get Movimientos By Numero Cuenta",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimiento/ByNumeroCuenta/:numeroCuenta",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimiento",
+										"ByNumeroCuenta",
+										":numeroCuenta"
+									],
+									"variable": [
+										{
+											"key": "numeroCuenta",
+											"value": "000001",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimiento/ByNumeroCuenta/:numeroCuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimiento",
+												"ByNumeroCuenta",
+												":numeroCuenta"
+											],
+											"variable": [
+												{
+													"key": "numeroCuenta",
+													"value": "quis laborum qui es",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Get Movimiento byId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimiento/ById/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimiento",
+										"ById",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimiento/ById/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimiento",
+												"ById",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "87304570",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Movimiento/:id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimiento/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimiento",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimiento/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimiento",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "87304570",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Reporte",
+					"item": [
+						{
+							"name": "GetReporte",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Reporte?identificacion=0802502948",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Reporte"
+									],
+									"query": [
+										{
+											"key": "identificacion",
+											"value": "0802502948"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GetReporte",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Reporte?identificacion=3101020304&fechaInicio=2022-02-07T00:00:00.000&fechaFin=2022-02-14T00:00:00.000",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Reporte"
+											],
+											"query": [
+												{
+													"key": "identificacion",
+													"value": "3101020304"
+												},
+												{
+													"key": "fechaInicio",
+													"value": "2022-02-07T00:00:00.000"
+												},
+												{
+													"key": "fechaFin",
+													"value": "2022-02-14T00:00:00.000"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 28 Aug 2022 21:39:53 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": false,\n    \"message\": null,\n    \"data\": [\n        {\n            \"fecha\": \"2022-08-28T16:39:54.2348453-05:00\",\n            \"cliente\": \"Marianela Montalvo\",\n            \"numeroCuenta\": \"225487\",\n            \"tipoCuenta\": \"Corriente\",\n            \"saldoInicial\": 100,\n            \"estado\": true,\n            \"movimiento\": 600,\n            \"saldoDisponible\": 700\n        },\n        {\n            \"fecha\": \"2022-08-28T16:39:54.249572-05:00\",\n            \"cliente\": \"Marianela Montalvo\",\n            \"numeroCuenta\": \"496825\",\n            \"tipoCuenta\": \"Ahorros\",\n            \"saldoInicial\": 540,\n            \"estado\": true,\n            \"movimiento\": -540,\n            \"saldoDisponible\": 0\n        }\n    ],\n    \"errors\": null,\n    \"currentPage\": 0,\n    \"totalPages\": 0,\n    \"pageSize\": 0,\n    \"totalCount\": 0,\n    \"hasPreviousPage\": false,\n    \"hasNextPage\": false,\n    \"previousPageUrl\": null,\n    \"nextPageUrl\": null\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "localhost",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "dockerhost",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "iis",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
