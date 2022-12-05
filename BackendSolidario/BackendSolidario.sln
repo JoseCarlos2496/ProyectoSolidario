@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendSolidario.API", "BackendSolidario.API\BackendSolidario.API.csproj", "{E88F2D02-6A92-4F21-B4A5-E036DC6656FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendSolidario.Core", "BackendSolidario.Core\BackendSolidario.Core.csproj", "{7F60328F-FEE8-45A4-B3BD-E97DAB56336E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendSolidario.Business", "BackendSolidario.Business\BackendSolidario.Business.csproj", "{D14B196F-B1F5-47BE-AA80-71EB34AABBF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendSolidario.Infrastructure", "BackendSolidario.Infrastructure\BackendSolidario.Infrastructure.csproj", "{976C20EA-7C3C-46EF-9AB6-5D277CE6A5DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E88F2D02-6A92-4F21-B4A5-E036DC6656FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E88F2D02-6A92-4F21-B4A5-E036DC6656FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E88F2D02-6A92-4F21-B4A5-E036DC6656FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E88F2D02-6A92-4F21-B4A5-E036DC6656FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F60328F-FEE8-45A4-B3BD-E97DAB56336E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F60328F-FEE8-45A4-B3BD-E97DAB56336E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F60328F-FEE8-45A4-B3BD-E97DAB56336E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F60328F-FEE8-45A4-B3BD-E97DAB56336E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D14B196F-B1F5-47BE-AA80-71EB34AABBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D14B196F-B1F5-47BE-AA80-71EB34AABBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D14B196F-B1F5-47BE-AA80-71EB34AABBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D14B196F-B1F5-47BE-AA80-71EB34AABBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976C20EA-7C3C-46EF-9AB6-5D277CE6A5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976C20EA-7C3C-46EF-9AB6-5D277CE6A5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976C20EA-7C3C-46EF-9AB6-5D277CE6A5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976C20EA-7C3C-46EF-9AB6-5D277CE6A5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
